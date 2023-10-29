@@ -5,7 +5,7 @@ Se excluyeron los tiroteos en eventos fuera del horario escolar, las descargas a
 y los suicidios ocurridos en privado o que no suponían una amenaza para otros niños. Tampoco se contabilizaron los tiroteos en institutos y universidades, que afectan más a 
 jóvenes adultos que a niños.
 
-###Objetivo
+### Objetivo
 
 Analizar y abordar el problema de la seguridad en las escuelas, con un enfoque en el análisis del perfil de los tiradores, la ubicación geoespacial, y 
 otros factores clave que influyen en los tiroteos escolares. El proyecto tiene como objetivo entender los patrones, tendencias y características asociadas con los eventos de 
