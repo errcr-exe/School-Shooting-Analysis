@@ -6,6 +6,7 @@ y los suicidios ocurridos en privado o que no suponían una amenaza para otros n
 jóvenes adultos que a niños.
 
 ###Objetivo
+
 Analizar y abordar el problema de la seguridad en las escuelas, con un enfoque en el análisis del perfil de los tiradores, la ubicación geoespacial, y 
 otros factores clave que influyen en los tiroteos escolares. El proyecto tiene como objetivo entender los patrones, tendencias y características asociadas con los eventos de 
 tiroteos escolares para desarrollar estrategias efectivas de prevención y respuesta.
