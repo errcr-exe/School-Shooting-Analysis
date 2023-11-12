@@ -1,0 +1,283 @@
+nces_district_id,district_name
+0,Null
+100008,Madison City
+100090,Anniston City
+100390,Birmingham City
+100420,Blount County
+101170,Decatur City
+101620,Gadsden City
+101710,Hale County
+102370,Mobile County
+102430,Montgomery County
+102970,Selma City Schools
+200180,Anchorage School District
+401460,Sierra Vista Unified District
+403450,Glendale Union High School District
+406330,Phoenix Union High School District (4286)
+409630,Yuma Union High School District
+500026,Pine Bluff School District
+507290,Harmony Grove School District
+509000,Little Rock School District
+511820,Prescott School District
+513930,Watson Chapel School District
+600032,Redondo Beach Unified
+600039,Delhi Unified
+602820,Antelope Valley Union High
+602850,Antioch Unified
+607500,Carlsbad Unified
+608460,Chino Valley Unified
+609780,Corning Union Elementary
+612330,Elk Grove Unified
+614550,Fresno Unified
+616230,Grossmont Union High
+616740,Hayward Unified
+617850,Hueneme Elementary
+622710,Los Angeles Unified
+624600,Merced City Elementary
+625530,Monterey Peninsula Unified
+628050,Oakland Unified
+629220,Oxnard
+629270,Oxnard Union High
+630780,Placerville Union Elementary
+632550,West Contra Costa Unified
+633840,Sacramento City Unified
+633980,Salinas Union High
+634170,San Bernardino City Unified
+634410,San Francisco Unified
+635830,Santa Rosa High
+638730,Taft Union High
+640590,Vacaville Unified
+640740,Vallejo City Unified District
+642510,William S. Hart Union High
+802340,Aurora Joint District NO. 28 Of The Counties Of Adams And Arapahoe
+802370,Platte Canyon School District No. 1 Of The County Of Park
+803360,School District NO. 1 In The County Of Denver And State Of Colorado
+803450,Douglas County School District NO. Re 1
+804800,Jefferson County R-1
+805310,Littleton School District No. 6 In The County Of Arapahoe
+806150,Pueblo County School District 70
+807230,Westminster 50
+900031,Stamford Academy
+900450,Bridgeport School District
+902910,Newtown School District
+1000230,Colonial School District
+1001620,Smyrna School District
+1100030,District Of Columbia Pub Schls
+1200180,Broward
+1200270,Citrus
+1200390,Miami-Dade School District
+1200480,Duval County School District
+1200870,Hillsborough
+1201260,Marion
+1201290,Martin District
+1201440,Orange
+1201500,Palm Beach County School District
+1201530,Pasco
+1201710,Seminole County School District
+1300120,Atlanta Public Schools
+1301020,Chatham County
+1301230,Clayton County School District
+1301380,Colquitt County
+1301620,Dalton City
+1301740,Dekalb County
+1302280,Fulton County
+1304380,Richmond County
+1304410,Rockdale County
+1500030,Hawaii Department Of Education
+1601570,Jefferson County Joint District
+1700109,Ridgeview Cusd 19
+1704920,Ball Chatham Cusd 5
+1708370,Carbondale CHSD 165
+1709930,City of Chicago School District 299
+1712330,Dixon USD 170
+1725050,Mattoon CUSD 2
+1728620,Mclean County USD 5
+1731230,Peoria School District 150
+1732910,Proviso Twp H S Dist 209
+1734510,Rockford Sd 205
+1738970,Thornton Twp Hsd 205
+1803870,Gary Community School Corp
+1805670,Metropolitan School District of Lawrence Township
+1806510,M S D Martinsville Schools
+1806600,Middlebury Community Schools
+1807650,Noblesville Schools
+1809510,Richmond Community Schools
+1810590,South Vermillion Com Sch Corp
+1908970,Des Moines Public Schools
+2010140,Olathe School District
+2011640,Shawnee Mission Pub Sch
+2101350,Covington Independent
+2102990,Jefferson County
+2103810,Marshall County
+2200188,Rsd-educators For Quality Alternatives
+2200277,Kipp Booker T Washington
+2200300,Caddo Parish
+2200330,Calcasieu Parish
+2200540,East Baton Rouge Parish School Board
+2200900,Lafourche Parish
+2201080,City of Monroe School Board
+2201170,Orleans Parish School Board
+2400090,Baltimore City Public Schools District
+2400120,Baltimore County Public Schools
+2400480,Montgomery County Public Schools
+2400510,Prince George's County Public Schools
+2400600,St. Mary's County Public Schools
+2502790,Boston Public Schools Library and Media Services
+2600195,International Academy of Flint
+2600210,Conner Creek Academy East
+2601117,Flex High School Of Michigan
+2604260,Bay City School District
+2604500,Beecher Community School District
+2608040,Caro Community Schools
+2612000,Detroit City School District
+2614280,Ferndale Public Schools
+2619620,Jackson Public Schools
+2621150,Lansing Public School District
+2623820,Midland Public Schools
+2625400,Nice Community School District
+2627240,Oxford Community Schools
+2630390,Saginaw City School District
+2700025,Intermediate School District 287
+2709440,Rocori
+2718780,Mankoto Public School District
+2721240,Minneapolis Public School District
+2730510,Red Lake
+2731780,Robbinsdale Area Schools
+2801320,Desoto County School District
+2803150,Newton County School District
+2803600,Philadelphia Public School Dis
+2804470,Vicksburg Warren School Dist
+2804560,Webster Co School Dist
+2911910,Farmington R-VII
+2916350,Joplin R-VIII
+2916400,Kansas City 33
+2929280,St. Louis City
+3018540,Missoula H S
+3173740,Millard Public Schools
+3200060,Clark County School District
+3200480,Washoe County School District
+3302990,Fall Mountain Regional School District
+3407830,Jersey City
+3500010,Rio Rancho Public Schools
+3500060,Albuquerque Public Schools
+3500117,Cesar Chavez Community School
+3500150,Aztec Municipal Schools
+3500690,Deming Public Schools
+3502250,Roswell Independent Schools
+3600021,Mattituck-Cutchogue Union Free School District
+3600090,New York City Geographic District #12
+3600103,New York City Geographic District #31
+3601065,Urban Dove Team Charter School
+3601085,Great Oaks Charter School
+3609630,East Greenbush Central School District
+3620100,Mount Vernon City School District
+3620580,New York City Public Schools
+3623760,Poughkeepsie City School District
+3624750,Rochester City School District
+3630330,Wayne Central School District
+3700011,Cumberland County Schools
+3700012,Pitt County Schools
+3700122,Crossroads Charter High
+3700420,Brunswick County Schools
+3700720,Chapel Hill-Carrboro Schools
+3700900,Cleveland County Schools
+3701500,Winston Salem/Forsyth County Schools
+3701920,Guilford County Schools
+3702100,Henderson County Schools
+3702970,Charlotte-Mecklenburg Schools
+3703330,New Hanover County Schools
+3703480,Orange County Schools
+3704050,Rowan-Salisbury Schools
+3704320,Stanly County Schools
+3704720,Wake County Schools
+3800046,Mott-regent 1
+3904375,Cincinnati City
+3904378,Cleveland Municipal City
+3904380,Columbus City School District
+3904441,Mount Healthy City SD
+3904612,Madison Local
+3904621,West Liberty-Salem Local
+3904718,Chardon Local
+3904833,Lowellville Local
+4011970,Fort Gibson
+4012570,Geary
+4015210,Hugo
+4029610,Tecumseh
+4101980,Bend-Lapine Administrative SD 1
+4102040,Bethel Sd 52
+4106000,Gresham-Barlow Sd 10J
+4110040,Portland County Schools
+4110520,Reynolds SD 7
+4110710,Douglas County SD 4
+4200078,Delaware Valley CHS
+4209300,Erie City Shool District
+4213140,Lancaster SD
+4218990,Philadelphia City SD
+4219170,Pittsburgh SD
+4220100,Red Lion Area SD
+4225830,West Shore SD
+4400900,Providence School District
+4500720,Aiken 01
+4500870,Anderson 04
+4501560,Chesterfield 01
+4502310,Greenville County School District
+4502370,Greenwood 51
+4502490,Horry 01
+4503360,Richland 01
+4503910,Orangeburg
+4631350,Harrisburg School District 41-2
+4700148,Shelby County
+4700420,Campbell County School Distrct
+4702100,Jefferson County School District
+4702220,Knox County School District
+4702580,Madison County
+4702940,Memphis City School District
+4703180,Nashville-Davidson County SD
+4703690,Rutherford County
+4703990,Sullivan County
+4800209,Yes Prep Public Schools Inc
+4807950,Alpine ISD
+4808130,Amarillo Isd
+4808700,Arlington Isd
+4808940,Austin ISD
+4811680,Brownsville ISD
+4812750,Canton ISD
+4816200,Dalhart ISD
+4816230,Dallas ISD
+4818540,Ennis ISD
+4819700,Fort Worth ISD
+4820340,Garland ISD
+4823640,The Houston Independent School District
+4824450,Italy ISD
+4824990,Judson ISD
+4828290,Los Fresnos CISD
+4828920,Mansfield Isd
+4830420,Mexia Independent School District
+4833060,North Forest ISD
+4834320,Pasadena Isd
+4839270,Santa Fe ISD
+4843720,Uvalde CISD
+4900142,Canyons District
+4900210,Davis District
+4900360,Granite District
+4900870,Salt Lake District
+5100810,Chesapeake City Public Schools
+5101890,Henrico Co Pblc Schs
+5102640,Newport News City of Public Schools
+5103000,Portsmouth City Pblc Schs
+5103130,Prince William Co Pblc Schs
+5103240,Richmond City Pblc Schs
+5300660,Bremerton School District
+5302970,Freeman School District
+5304860,Marysville School District
+5305850,North Thurston Public Schools
+5307230,Renton
+5307710,Seattle School District No. 1
+5308250,Spokane School District
+5308700,Tacoma School District
+5310110,Yakima School District
+5508700,Marinette School District
+5509600,Milwaukee Sch Dist
+5511190,Oshkosh Area School District
+5515780,Waukesha School District
+5516470,Weston
