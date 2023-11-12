@@ -1,0 +1,245 @@
+county_fips,county
+1009,Blount County
+1015,Calhoun County
+1047,Dallas County
+1055,Etowah County
+1065,Hale County
+1073,Jefferson County
+1089,Madison County
+1097,Mobile County
+1101,Montgomery County
+1103,Morgan County
+2020,Anchorage Municipality
+4003,Cochise County
+4013,Maricopa County
+4027,Yuma County
+5069,Jefferson County
+5099,Nevada County
+5103,Ouachita County
+5119,Pulaski County
+6001,Alameda County
+6013,Contra Costa County
+6017,El Dorado County
+6019,Fresno County
+6029,Kern County
+6037,Los Angeles County
+6047,Merced County
+6053,Monterey County
+6067,Sacramento County
+6071,San Bernardino County
+6073,San Diego County
+6075,San Francisco County
+6095,Solano County
+6097,Sonoma County
+6103,Tehama County
+6111,Ventura County
+8001,Adams County
+8005,Arapahoe County
+8031,Denver County
+8035,Douglas County
+8059,Jefferson County
+8093,Park County
+8101,Pueblo County
+9001,Fairfield County
+9009,New Haven County
+10001,Kent County
+10003,New Castle County
+11001,District of Columbia
+12011,Broward County
+12017,Citrus County
+12031,Duval County
+12057,Hillsborough County
+12065,Orange County
+12071,Lee County
+12083,Marion County
+12085,Martin County
+12086,Miami-Dade County
+12095,Orange County
+12099,Palm Beach County
+12101,Pasco County
+12117,Seminole County
+13051,Chatham County
+13063,Clayton County
+13071,Colquitt County
+13089,Dekalb County
+13121,Fulton County
+13245,Richmond County
+13247,Rockdale County
+13313,Whitfield County
+15003,Honolulu County
+16051,Jefferson County
+17029,Coles County
+17031,Cook County
+17077,Jackson County
+17097,Lake County
+17103,Lee County
+17113,Mclean County
+17143,Peoria County
+17167,Sangamon County
+17201,Winnebago County
+18039,Elkhart County
+18057,Hamilton County
+18089,Lake County
+18097,Marion County
+18109,Morgan County
+18165,Vermillion County
+18177,Wayne County
+19153,Polk County
+20091,Johnson County
+21111,Jefferson County
+21117,Kenton County
+21157,Marshall County
+22017,Caddo Parish
+22019,Calcasieu Parish
+22033,East Baton Rouge Parish
+22057,Lafourche Parish
+22071,Orleans Parish
+22073,Ouachita Parish
+22109,Terrebonne County
+24005,Baltimore County
+24031,Montgomery County
+24033,Prince George's County
+24037,St. Mary's County
+24510,Baltimore City
+25009,Essex County
+25025,Suffolk County
+26017,Bay County
+26025,Calhoun County
+26049,Genesee County
+26065,Ingham County
+26075,Jackson County
+26099,Macomb County
+26103,Marquette County
+26111,Midland County
+26125,Oakland County
+26145,Saginaw County
+26157,Tuscola County
+26163,Wayne County
+27007,Beltrami County
+27013,Blue Earth County
+27053,Hennepin County
+27123,Ramsey County
+27145,Stearns County
+28001,Adams County
+28033,DeSoto County
+28049,Hinds County
+28079,Leake County
+28099,Neshoba County
+28101,Newton County
+28149,Warren County
+28155,Webster County
+29047,Clay County
+29095,Jackson County
+29097,Jasper County
+29187,St. Francois County
+29510,St. Louis City
+30063,Missoula County
+31055,Douglas County
+32003,Clark County
+32031,Washoe County
+33005,Cheshire County
+34017,Hudson County
+35001,Bernalillo County
+35005,Chaves County
+35029,Luna County
+35043,Sandoval County
+35045,San Juan County
+36005,Bronx County
+36027,Dutchess County
+36047,Kings County
+36055,Monroe County
+36061,New York County
+36083,RENSSELAER
+36085,Richmond County
+36103,Suffolk County
+36117,Wayne County
+36119,Westchester County
+37019,Brunswick County
+37045,Cleveland County
+37051,Cumberland County
+37067,Forsyth County
+37081,Guilford County
+37089,Handerson County
+37119,Mecklenburg County
+37129,New Hanover County
+37135,Orange County
+37147,Pitt County
+37159,Rowan County
+37167,Stanly County
+37183,Wake County
+38041,Hettinger County
+39017,Butler County
+39021,Champaign County
+39035,Cuyahoga County
+39049,Franklin County
+39055,Geauga County
+39061,Hamilton County
+39099,Mahoning County
+39145,Scioto County
+40011,Blaine County
+40023,Choctaw County
+40101,Muskogee County
+40125,Pottawatomie County
+41017,Deschutes County
+41019,Douglas County
+41039,Lane County
+41051,Multnomah County
+42003,Allegheny County
+42041,Cumberland County
+42049,Erie County
+42071,Lancaster County
+42081,Lycoming County
+42101,Philadelphia County
+42133,York County
+44007,Providence County
+45003,Aiken County
+45007,Anderson County
+45025,Chesterfield County
+45045,Greenville County
+45047,Greenwood County
+45051,Horry County
+45075,Orangeburg County
+45079,Richland County
+46083,Lincoln County
+47013,Campbell County
+47037,Davidson County
+47089,Jefferson County
+47093,Knox County
+47113,Madison County
+47149,Rutherford County
+47157,Shelby County
+47163,Sullivan County
+48029,Bexar County
+48043,Brewster County
+48061,Cameron County
+48113,Dallas County
+48139,Ellis County
+48167,Galveston County
+48201,Harris County
+48205,Hartley County
+48293,Limestone County
+48375,Potter County
+48439,Tarrant County
+48453,Travis County
+48463,Uvalde County
+48467,Van Zandt County
+49011,Davis County
+49035,Salt Lake County
+51087,Henrico County
+51153,Prince William County
+51550,Chesapeake City
+51700,Newport News City
+51740,Portsmouth City
+51760,Richmond City
+53033,King County
+53035,Kitsap County
+53053,Peirce County
+53061,Snohomish County
+53063,Spokane County
+53067,Thurston County
+53077,Yakima County
+55075,Marinette County
+55079,Milwaukee County
+55111,Sauk County
+55133,Waukesha County
+55139,Winnebago County
