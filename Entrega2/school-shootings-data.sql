@@ -1,0 +1,230 @@
+/* CREAR TABLAS*/
+
+-- school_type
+CREATE TABLE school_type (
+    uid SMALLINT PRIMARY KEY,
+    school_type VARCHAR(255)
+);
+
+-- district
+CREATE TABLE district (
+    nces_district_id INT PRIMARY KEY,
+    district_name VARCHAR(255)
+);
+
+-- city
+CREATE TABLE city (
+    uid SMALLINT PRIMARY KEY,
+    city VARCHAR(255)
+);
+
+-- state
+CREATE TABLE state (
+    state_fips SMALLINT PRIMARY KEY,
+    state VARCHAR(255)
+);
+
+-- ShootingType
+CREATE TABLE ShootingType (
+    uid SMALLINT PRIMARY KEY,
+    shooting_type VARCHAR(255)
+);
+
+-- ShooterIncidentLocation
+CREATE TABLE ShooterIncidentLocation (
+    uid SMALLINT PRIMARY KEY,
+    lat NUMERIC(10,7),
+    long NUMERIC(10,7)
+);
+
+-- ulocale
+CREATE TABLE ulocale (
+    uid SMALLINT PRIMARY KEY,
+    ulocale SMALLINT
+);
+
+-- county
+CREATE TABLE county (
+    county_fips INT PRIMARY KEY,
+    county VARCHAR(255)
+);
+
+-- Weapon source
+CREATE TABLE Weapon_source (
+    uid SMALLINT PRIMARY KEY,
+    weapon_source VARCHAR(255)
+);
+
+-- Weapon
+CREATE TABLE Weapon (
+    uid SMALLINT PRIMARY KEY,
+    weapon VARCHAR(255)
+);
+
+-- TypeShooter
+CREATE TABLE TypeShooter (
+    uid SMALLINT PRIMARY KEY,
+    age_shooter1 SMALLINT,
+    gender_shooter1 VARCHAR(255),
+    race_ethnicity_shooter1 VARCHAR(255),
+    shooter_relationship1 VARCHAR(255),
+    shooter_deceased1 SMALLINT,
+    deceased_notes1 VARCHAR(255)
+);
+
+-- district_info
+CREATE TABLE district_info (
+    uid SMALLINT PRIMARY KEY,
+    nces_district_id INT,
+    city SMALLINT,
+    state_fips SMALLINT,
+    county_fips INT,
+    ulocale SMALLINT,
+	FOREIGN KEY (nces_district_id) REFERENCES district(nces_district_id),
+	FOREIGN KEY (state_fips) REFERENCES state(state_fips),
+    FOREIGN KEY (city) REFERENCES city(uid),
+    FOREIGN KEY (county_fips) REFERENCES county(county_fips),
+    FOREIGN KEY (ulocale) REFERENCES ulocale(uid)
+);
+
+-- School_info
+CREATE TABLE School_info (
+    nces_school_id VARCHAR(255) PRIMARY KEY,
+    school_name VARCHAR(255),
+    nces_district_id INT,
+    school_type SMALLINT,
+    FOREIGN KEY (nces_district_id) REFERENCES district(nces_district_id),
+	FOREIGN KEY (school_type) REFERENCES school_type(uid)
+);
+
+-- SchoolEthnicity
+CREATE TABLE SchoolEthnicity (
+    uid SMALLINT PRIMARY KEY,
+    nces_school_id VARCHAR(255),
+    white SMALLINT,
+    black SMALLINT,
+    hispanic SMALLINT,
+    asian SMALLINT,
+    american_indian_alaska_native SMALLINT,
+    hawaiian_native_pacific_islander SMALLINT,
+    two_or_more SMALLINT,
+    FOREIGN KEY (nces_school_id) REFERENCES School_info(nces_school_id)
+);
+
+-- ShootingIncident
+CREATE TABLE ShootingIncident (
+    uid SMALLINT PRIMARY KEY,
+    nces_school_id VARCHAR(255),
+    uid_SchoolEthnicity SMALLINT,
+    uid_ShooterIncidentLocation SMALLINT,
+    date DATE,
+    school_year VARCHAR(255),
+    time TIME,
+    day_of_week VARCHAR(255),
+    enrollment SMALLINT,
+    killed SMALLINT,
+    injured SMALLINT,
+    casualties SMALLINT,
+    uid_shooting_type SMALLINT,
+    resource_officer SMALLINT,
+    staffing NUMERIC(7,3),----
+    low_grade VARCHAR(255),
+    high_grade VARCHAR(255),
+    lunch FLOAT,
+    FOREIGN KEY (nces_school_id) REFERENCES School_info(nces_school_id),
+    FOREIGN KEY (uid_SchoolEthnicity) REFERENCES SchoolEthnicity(uid),
+    FOREIGN KEY (uid_ShooterIncidentLocation) REFERENCES ShooterIncidentLocation(uid),
+    FOREIGN KEY (uid_shooting_type) REFERENCES ShootingType(uid)
+);
+
+-- ShooterWeapon
+CREATE TABLE ShooterWeapon (
+    uid SMALLINT PRIMARY KEY,
+    uid_incident SMALLINT,
+    weapon_uid SMALLINT,
+    weapon_source_uid SMALLINT,
+    FOREIGN KEY (uid_incident) REFERENCES ShootingIncident(uid),
+    FOREIGN KEY (weapon_uid) REFERENCES Weapon(uid),
+    FOREIGN KEY (weapon_source_uid) REFERENCES Weapon_source(uid)
+);
+
+-- ShooterIncidentRelation
+CREATE TABLE ShooterIncidentRelation (
+    uid SMALLINT PRIMARY KEY,
+    uid_incident SMALLINT,
+    TypeShooter1_uid SMALLINT,
+    TypeShooter2_uid SMALLINT,
+    FOREIGN KEY (uid_incident) REFERENCES ShootingIncident(uid),
+    FOREIGN KEY (TypeShooter1_uid) REFERENCES TypeShooter(uid),
+    FOREIGN KEY (TypeShooter2_uid) REFERENCES TypeShooter(uid)
+);
+
+-- SchoolShooterRelation
+CREATE TABLE SchoolShooterRelation (
+    uid SMALLINT PRIMARY KEY,
+    nces_school_id VARCHAR(255),
+    TypeShooter1_uid SMALLINT,
+    TypeShooter2_uid SMALLINT,
+    FOREIGN KEY (nces_school_id) REFERENCES School_info(nces_school_id),
+    FOREIGN KEY (TypeShooter1_uid) REFERENCES TypeShooter(uid),
+    FOREIGN KEY (TypeShooter2_uid) REFERENCES TypeShooter(uid)
+);
+
+
+/* Cargar datos*/
+
+-- school_type-
+COPY school_type(uid, school_type) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\school_type.csv' DELIMITER ',' CSV HEADER;
+
+-- district-
+COPY district(nces_district_id, district_name) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\district.csv' DELIMITER ',' CSV HEADER;
+
+-- city-
+COPY city(uid, city) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\city.csv' DELIMITER ',' CSV HEADER;
+
+-- state-
+COPY state(state_fips, state) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\state.csv' DELIMITER ',' CSV HEADER;
+
+-- ShooterIncidentType-
+COPY ShootingType(uid, shooting_type) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\shooting_type.csv' DELIMITER ',' CSV HEADER;
+
+-- ShooterIncidentLocation-
+COPY ShooterIncidentLocation(uid, lat, long) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\lat-log.csv' DELIMITER ',' CSV HEADER;
+
+-- ulocale-
+COPY ulocale(uid, ulocale) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\ulocate.csv' DELIMITER ',' CSV HEADER;
+
+-- county-
+COPY county(county_fips, county) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\county.csv' DELIMITER ',' CSV HEADER;
+
+-- Weapon source-
+COPY Weapon_source(uid, weapon_source) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\w_source.csv' DELIMITER ',' CSV HEADER;
+
+-- Weapon-
+COPY Weapon(uid, weapon) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\weapon.csv' DELIMITER ',' CSV HEADER;
+
+-- district_info-
+COPY district_info(uid, nces_district_id, city, state_fips, county_fips, ulocale) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\district_info.csv' DELIMITER ';' CSV HEADER;
+
+-- School_info-
+COPY School_info(nces_school_id, school_name, nces_district_id, school_type) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\School_info.csv' DELIMITER ';' CSV HEADER;
+
+-- SchoolEthnicity-
+COPY SchoolEthnicity(uid, nces_school_id, white, black, hispanic, asian, american_indian_alaska_native, hawaiian_native_pacific_islander, two_or_more) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\SchoolEthnicity.csv' DELIMITER ';' CSV NULL '' HEADER;
+
+-- ShootingIncident-
+SET datestyle = 'MDY'
+COPY ShootingIncident(uid, nces_school_id, uid_SchoolEthnicity, uid_ShooterIncidentLocation, date, school_year, time, day_of_week, enrollment, killed, injured, casualties, uid_shooting_type, resource_officer, staffing, low_grade, high_grade, lunch) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\ShootingIncident.csv' DELIMITER ',' CSV HEADER;
+
+-- ShooterWeapon-
+COPY ShooterWeapon(uid, uid_incident, weapon_uid, weapon_source_uid) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\ShooterWeapon.csv' DELIMITER ';' CSV HEADER;
+
+-- TypeShooter-
+COPY TypeShooter(uid, age_shooter1, gender_shooter1, race_ethnicity_shooter1, shooter_relationship1, shooter_deceased1, deceased_notes1) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\TypeShooter.csv' DELIMITER ';' CSV HEADER;
+
+-- ShooterIncidentRelation-
+COPY ShooterIncidentRelation(uid, uid_incident, TypeShooter1_uid, TypeShooter2_uid) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\_ShooterIncidentRelatio.csv' DELIMITER ';' CSV HEADER;
+
+-- SchoolShooterRelation-
+COPY SchoolShooterRelation(uid, nces_school_id, TypeShooter1_uid, TypeShooter2_uid) FROM 'D:\Uni\Semestre 3\Ing datos\Proyecto\Entrega2\SchoolShooterRelation.csv' DELIMITER ',' CSV HEADER;
+
